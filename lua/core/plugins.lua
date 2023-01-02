@@ -122,7 +122,7 @@ local astro_plugins = {
         "TSUpdateSync",
       })
     end,
-    run = function() require("nvim-treesitter.install").update { with_sync = true }() end,
+    run = function() require("nvim-treesitter.install").update { with_sync = true } () end,
     config = function() require "configs.treesitter" end,
   },
 
@@ -152,6 +152,7 @@ local astro_plugins = {
   ["saadparwaiz1/cmp_luasnip"] = {
     after = "nvim-cmp",
     config = function() astronvim.add_user_cmp_source "luasnip" end,
+    --config = function() astronvim.add_user_cmp_source "TabNine" end
   },
 
   -- Buffer completion source
@@ -163,6 +164,7 @@ local astro_plugins = {
   -- LSP completion source
   ["hrsh7th/cmp-nvim-lsp"] = { after = "nvim-cmp", config = function() astronvim.add_user_cmp_source "nvim_lsp" end },
 
+  -- LSP completion source
   -- Built-in LSP
   ["neovim/nvim-lspconfig"] = {
     module = "lspconfig",
