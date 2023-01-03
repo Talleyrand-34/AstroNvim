@@ -32,6 +32,9 @@
 </p>
 
 <p align="center">
+Local features: Tabnine Integration and gitui as git manager
+</p>
+<p align="center">
 AstroNvim is an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins
 </p>
 
